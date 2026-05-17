@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>The Gilded Lung - Story</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:
+linear-gradient(
+rgba(10,8,5,0.92),
+rgba(15,10,5,0.96)),
+url("images/bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+font-family:Georgia, serif;
+
+color:#f1d7a3;
+
+min-height:100vh;
+overflow-x:hidden;
+}
+
+.container{
+padding:20px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title-container{
+
+width:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+margin-bottom:20px;
+}
+
+.title-image{
+
+width:950px;
+
+max-width:95%;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.subtitle-box{
+
+width:420px;
+height:75px;
+
+margin:0 auto 60px auto;
+
+transform:rotate(-7deg);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+font-style:italic;
+
+color:#f2cb73;
+
+background:
+linear-gradient(
+to bottom,
+rgba(60,42,28,0.95),
+rgba(25,18,12,0.95));
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-section{
+
+display:flex;
+justify-content:center;
+
+gap:50px;
+
+margin-bottom:70px;
+
+flex-wrap:wrap;
+}
+
+.nav-btn{
+
+width:240px;
+height:70px;
+
+text-decoration:none;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+letter-spacing:2px;
+
+color:#e7d1aa;
+
+transition:0.3s;
+
+background:
+linear-gradient(
+to bottom,
+rgba(50,35,24,0.95),
+rgba(20,14,10,0.95));
+}
+
+.nav-btn:hover{
+
+transform:scale(1.05);
+
+background:#3d7d8f;
+
+color:white;
+}
+
+/* =========================
+   MUSIC PLAYER
+========================= */
+
+.music-player{
+
+width:320px;
+height:80px;
+
+margin:0 auto 50px auto;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:
+linear-gradient(
+to bottom,
+#7e9b2f,
+#51641b);
+}
+
+.music-player audio{
+width:92%;
+}
+
+/* =========================
+   STORY IMAGE
+========================= */
+
+.story-image{
+
+width:85%;
+
+margin:0 auto 60px auto;
+
+display:block;
+
+background:
+rgba(0,0,0,0.4);
+
+padding:15px;
+}
+
+.story-image img{
+
+width:100%;
+
+display:block;
+
+object-fit:cover;
+}
+
+/* =========================
+   STORY BOX
+========================= */
+
+.story-box{
+
+width:85%;
+
+margin:auto;
+
+padding:70px;
+
+line-height:2.1;
+
+font-size:22px;
+
+background:
+linear-gradient(
+to bottom,
+rgba(35,24,16,0.94),
+rgba(15,10,7,0.96));
+}
+
+.story-box h1{
+
+font-size:44px;
+
+margin-bottom:25px;
+
+color:#d4af37;
+}
+
+.story-box h2{
+
+font-size:34px;
+
+margin-top:50px;
+margin-bottom:20px;
+
+color:#d4af37;
+}
+
+/* =========================
+   STEAM EFFECT
+========================= */
+
+.steam{
+
+position:fixed;
+
+width:450px;
+height:450px;
+
+background:
+radial-gradient(
+rgba(255,255,255,0.04),
+transparent 70%);
+
+filter:blur(45px);
+
+pointer-events:none;
+
+animation:steamFloat 12s infinite ease-in-out;
+}
+
+.steam:nth-child(1){
+
+top:0;
+left:0;
+}
+
+.steam:nth-child(2){
+
+bottom:0;
+right:0;
+
+animation-delay:4s;
+}
+
+@keyframes steamFloat{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-30px);
+}
+
+100%{
+transform:translateY(0px);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- STEAM -->
+
+<div class="steam"></div>
+<div class="steam"></div>
+
+<div class="container">
+
+<!-- TITLE -->
+
+<div class="title-container">
+
+<img src="images/title.png"
+class="title-image">
+
+</div>
+
+<!-- SUBTITLE -->
+
+<div class="subtitle-box">
+
+The Story
+
+</div>
+
+<!-- NAVIGATION -->
+
+<div class="nav-section">
+
+<a href="index.html"
+class="nav-btn">
+
+HOME
+
+</a>
+
+<a href="characters.html"
+class="nav-btn">
+
+CHARACTERS
+
+</a>
+
+<a href="listen.html"
+class="nav-btn">
+
+LISTEN
+
+</a>
+
+</div>
+
+<!-- MUSIC -->
+
+<div class="music-player">
+
+<audio controls>
+
+<source src="audio/storymusic.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- TOP IMAGE -->
+
+<div class="story-image">
+
+<img src="images/city.png">
+
+</div>
+
+<!-- STORY -->
+
+<div class="story-box">
+
+<h1>The World Beyond Noctoris</h1>
+
+<p>
+
+The world beyond the great walls of Noctoris is a beautiful death trap. Centuries of atmospheric decay have stripped the air of its life-giving properties, replacing it with a thick, swirling haze of toxic gases that would liquefy a human's lungs in seconds.
+
+Yet, life found a way; the flora and fauna adapted, evolving into a dense, emerald wilderness of carnivorous vines and neon-pulsing fungi that thrive on the very toxins that kill man.
+
+Inside the reinforced glass dome of Noctoris, humanity clings to its vertical metal forest of gears and steam, oblivious to the vibrant jungle pressing against the glass.
+
+</p>
+
+<h2>The Heist</h2>
+
+<p>
+
+Silas, a scavenger with a talent for finding what isn't his, didn't come to Dr. Thorne’s lab for a suit. He came for the "Aether-Core," a legendary power source.
+
+But as the crimson alarm lights began to scream and the heavy boots of Commander Drax’s guards thundered in the hall, Silas realized the core was already integrated into a massive, clunky suit of copper and brass.
+
+With no other exit and the door buckling under the force of the Hunter’s guards, Silas threw himself into the suit’s open chassis.
+
+The pistons hissed, the flexible leather seals tightened, and the glass porthole snapped shut just as the guards burst in.
+
+</p>
+
+<h2>The Reveal</h2>
+
+<p>
+
+Silas barely escaped into the damp, light-starved labyrinth of the slums.
+
+There, he met Kael, a disgraced engineer who lived in the shadows of the lower gears.
+
+As Kael inspected the suit’s glowing green canisters, his eyes widened.
+
+It wasn't a weapon—it was a portable ecosystem.
+
+The suit was designed to scrub the outside world's toxicity and convert it into high-pressure oxygen, allowing a human to walk through the "dead" world as if it were a garden.
+
+</p>
+
+<h2>The Pursuit</h2>
+
+<p>
+
+Word reached Commander Drax at the Citadel.
+
+Drax, a man who hates wasted time and values absolute discipline, immediately put the city under a total lockdown.
+
+He wasn't simply hunting a thief; he was hunting the only technology that could liberate humanity—or Drax himself—from the dome.
+
+To Drax, Silas wasn't just holding a suit; he was holding the key to a new empire.
+
+</p>
+
+<h2>The Escape & The Sacrifice</h2>
+
+<p>
+
+Kael led Silas through the "Bypasses," a series of forgotten, rusted pipes that fed directly into the Great Wall’s massive airlock system.
+
+They moved through the darkness, the copper suit clanking against the stone, until they reached the final heavy iron seal.
+
+Suddenly, the cold, rhythmic ticking of a brass timepiece echoed through the chamber.
+
+Drax was waiting.
+
+</p>
+
+<p>
+
+"You are out of time, scavenger," Drax said, his polished boots clicking on the metal floor.
+
+</p>
+
+<p>
+
+The airlock required someone to manually hold the massive, grinding gears in place while the pressure equalized.
+
+As the guards closed in, Kael looked at Silas and then at the iron lever.
+
+</p>
+
+<p>
+
+"Go see the world for me," Kael whispered.
+
+</p>
+
+<p>
+
+He threw his weight against the gears, his muscles straining as the heavy machinery groaned.
+
+He stayed behind, a lone figure holding back the tide of Drax’s soldiers, sacrificing his life to ensure the final door sealed behind Silas forever.
+
+</p>
+
+<h2>The Freedom</h2>
+
+<p>
+
+The airlock hissed one last time, and Silas was violently expelled onto the soil.
+
+He collapsed, waiting for the toxic sting of the atmosphere to take him, but it never came.
+
+Instead, he heard the steady, rhythmic hiss of the copper tubing delivering pure, clean air to his lungs.
+
+</p>
+
+<p>
+
+Silas stood up and looked through the glass porthole.
+
+He didn't see a wasteland.
+
+He saw a breathtaking, neon-colored jungle of alien beauty—massive trees glowing with bioluminescence and strange creatures moving through the vibrant mist.
+
+He was free, breathing deep in a world he was told was dead, knowing that with the airlock sealed and Kael gone, there was no turning back.
+
+</p>
+
+</div>
+
+<!-- BOTTOM IMAGE -->
+
+<div class="story-image"
+style="margin-top:60px; margin-bottom:80px;">
+
+<img src="images/armor.png">
+
+</div>
+
+</div>
+
+</body>
+</html>

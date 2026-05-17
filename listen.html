@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>The Gilded Lung - Listen</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:
+linear-gradient(
+rgba(10,8,5,0.92),
+rgba(15,10,5,0.96)),
+url("images/bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+font-family:Georgia, serif;
+
+color:#f1d7a3;
+
+min-height:100vh;
+}
+
+.container{
+padding:20px;
+}
+
+/* TITLE */
+
+.title-container{
+
+width:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+margin-bottom:20px;
+}
+
+.title-image{
+
+width:950px;
+
+max-width:95%;
+}
+
+/* SUBTITLE */
+
+.subtitle-box{
+
+width:420px;
+height:75px;
+
+margin:0 auto 60px auto;
+
+transform:rotate(-7deg);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+font-style:italic;
+
+color:#f2cb73;
+
+background:
+linear-gradient(
+to bottom,
+rgba(60,42,28,0.95),
+rgba(25,18,12,0.95));
+}
+
+/* NAVIGATION */
+
+.nav-section{
+
+display:flex;
+justify-content:center;
+
+gap:50px;
+
+margin-bottom:80px;
+
+flex-wrap:wrap;
+}
+
+.nav-btn{
+
+width:240px;
+height:70px;
+
+text-decoration:none;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:24px;
+
+letter-spacing:2px;
+
+color:#e7d1aa;
+
+transition:0.3s;
+
+background:
+linear-gradient(
+to bottom,
+rgba(50,35,24,0.95),
+rgba(20,14,10,0.95));
+}
+
+.nav-btn:hover{
+
+transform:scale(1.05);
+
+background:#3d7d8f;
+
+color:white;
+}
+
+/* AUDIO SECTION */
+
+.audio-section{
+
+width:85%;
+
+margin:auto;
+
+padding:70px;
+
+display:flex;
+flex-direction:column;
+
+gap:60px;
+
+background:
+linear-gradient(
+to bottom,
+rgba(35,24,16,0.92),
+rgba(15,10,7,0.95));
+}
+
+.audio-box{
+
+padding:40px;
+
+background:
+linear-gradient(
+to bottom,
+rgba(70,50,30,0.9),
+rgba(25,18,12,0.95));
+}
+
+.audio-box h1{
+
+margin-bottom:20px;
+
+color:#d4af37;
+}
+
+audio{
+width:100%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title-container">
+
+<img src="images/title.png"
+class="title-image">
+
+</div>
+
+<div class="subtitle-box">
+
+Listen
+
+</div>
+
+<div class="nav-section">
+
+<a href="index.html"
+class="nav-btn">
+
+HOME
+
+</a>
+
+<a href="characters.html"
+class="nav-btn">
+
+CHARACTERS
+
+</a>
+
+<a href="story.html"
+class="nav-btn">
+
+STORY
+
+</a>
+
+</div>
+
+<div class="audio-section">
+
+<div class="audio-box">
+
+<h1>Background Soundtrack</h1>
+
+<audio controls>
+
+<source src="audio/music.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<div class="audio-box">
+
+<h1>Voice Narration</h1>
+
+<audio controls>
+
+<source src="audio/voiceover.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
